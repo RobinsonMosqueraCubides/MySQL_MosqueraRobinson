@@ -67,6 +67,7 @@ codigo_empleado_rep_ventas int(11),
 limite_credito decimal(15,2),
 foreign key (codigo_empleado_rep_ventas) references empleado(codigo_empleado)
 );
+
 create table pago(
 id_transaccion varchar(50) primary key,
 forma_pago varchar(40) not null,
